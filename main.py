@@ -1,1 +1,15 @@
-# 这个文件用于编写代码
+s = input()
+letter = digit = space = other = 0
+for c in s:
+    if c.isalpha():
+        letter += 1
+    elif c.isdigit():
+        digit += 1
+    elif c.isspace():
+        space += 1
+    else:
+        other += 1
+print(f"英文字符: {letter}")
+print(f"数字: {digit}")
+print(f"空格: {space}")
+print(f"其他字符: {other}")
